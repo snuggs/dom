@@ -1536,7 +1536,7 @@ can be used to explore this matter in more detail.
  <dt>{{Text}}
  <dt>{{ProcessingInstruction}}
  <dt>{{Comment}}
- <dd><p>The number of <a>code units</a> in its <a for=CharacterData>data</a>.
+ <dd><p>Its <a for=CharacterData>data</a>'s <a for="JavaScript string">length</a>.
 
  <dt>Any other node
  <dd><p>Its number of <a>children</a>.
@@ -6728,10 +6728,8 @@ To <dfn export id=concept-cd-replace>replace data</dfn> of node <var>node</var> 
  <a for=CharacterData>data</a> after <var>offset</var>
  <a>code units</a>.
 
- <li>Let <var>delete offset</var> be <var>offset</var> plus
- the number of
- <a>code units</a> in
- <var>data</var>.
+ <li>Let <var>delete offset</var> be <var>offset</var> + <var>data</var>'s
+ <a for="JavaScript string">length</a>.
 
  <li>Starting from <var>delete offset</var>
  <a>code units</a>, remove
